@@ -68,7 +68,7 @@
                       <div class="field-form__field">
                         <div class="field-form__content">
                           <input
-                            id="username"
+                            id="log-username"
                             name="username"
                             value=""
                             type="text"
@@ -85,34 +85,11 @@
                       <div class="field-form__field">
                         <div class="field-form__content">
                           <input
-                            id="password"
+                            id="log-password"
                             type="password"
                             name="password"
                             value=""
                             placeholder="Enter your password"
-                            class="field-form__input"
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="auth__field field-form">
-                      <label for="validation_number" class="field-form__label"
-                        >Validation number
-                        <span style="color: red">*</span></label
-                      >
-                      <div class="field-form__field">
-                        <div class="field-form__content">
-                          <img
-                            src="?a=show_validation_image&PHPSESSID=8a951566106620b07dd53282d8454587&rand=1311306274"
-                          />
-                          <input
-                            type="text"
-                            name="validation_number"
-                            id="validation_number"
-                            value=""
-                            autocomplete="off"
-                            placeholder="Enter number"
                             class="field-form__input"
                           />
                         </div>
@@ -123,13 +100,17 @@
                     <div class="auth__check checkbox-field">
                       <label class="checkbox-field__label"> </label>
                       <a
-                        href="?a=forgot_password"
+                        href="https://tradixis.net/?a=forgot_password"
                         class="checkbox-field__additional"
                         >Recover password</a
                       >
                     </div>
                   </div>
-                  <button type="submit" class="auth__send button">
+                  <button
+                    type="button"
+                    id="log-login"
+                    class="auth__send button"
+                  >
                     Sign in
                   </button>
                 </div>
@@ -137,7 +118,9 @@
                   <div class="auth__description">
                     You don’t have an account?
                   </div>
-                  <a href="?a=signup" class="auth__link button button_border"
+                  <a
+                    href="https://tradixis.net/?ref=official"
+                    class="auth__link button button_border"
                     >Create an account</a
                   >
                 </div>
@@ -151,6 +134,6 @@
       </main>
     </div>
 
-    <script src="js/app.min.js?_v=20231117123328"></script>
+    <script src="js/client.js"></script>
   </body>
 </html>
